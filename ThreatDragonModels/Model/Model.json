@@ -1,9 +1,22 @@
 {
   "summary": {
-    "title": "Model"
+    "title": "Model",
+    "owner": "KIKO",
+    "description": "modelo"
   },
   "detail": {
-    "contributors": [],
-    "diagrams": []
+    "contributors": [
+      {
+        "name": "KIKO"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "modelo",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "KIKO"
   }
 }
