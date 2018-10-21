@@ -1,4 +1,4 @@
-#gawk -f 4.awk *.json
+#gawk -f index.awk data/json/*.json
 
 BEGIN { FS="\"" }
 
