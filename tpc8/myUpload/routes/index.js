@@ -7,7 +7,7 @@ var path = require('path')
 
 var myPublic = path.resolve(__dirname + '/../public')
 var myBD = myPublic + "/ficheiros.json"
-// console.log("BD in: " + __dirname)
+// console.log("Server in: " + __dirname)
 
 /* GET home page. */
 router.get('/', (req, res) => res.render('index', {title: 'Upload'}))
@@ -19,14 +19,14 @@ router.get('/files', (req, res) => {
   })
 })
 
-// acesso a ficheiros individuais
-router.get('/files/:fileName', (req, res) => {
-  var fileName = req.params.fileName
-  res.sendFile(path.resolve(myPublic + '/uploaded/' + fileName), erro => {
-    if (!erro) console.log('Sent:', fileName)
-    else res.render('erro', {e:erro})
-  })
-})
+// // acesso a ficheiros individuais
+// router.get('/files/:fileName', (req, res) => {
+//   var fileName = req.params.fileName
+//   res.sendFile(path.resolve(myPublic + '/uploaded/' + fileName), erro => {
+//     if (!erro) console.log('Sent:', fileName)
+//     else res.render('erro', {e:erro})
+//   })
+// })
 
 // guarda uploads
 router.post("/file/guardar", (req,res) => {
