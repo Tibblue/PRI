@@ -29,7 +29,7 @@ $(()=>{
             var ficheiro = document.forms['myUploadForm']['ficheiro'].files[0].name
             var descricao = document.forms['myUploadForm']['descricao'].value
 
-            $("#files").append("<tr><td><a href='/files/"+ficheiro+"'>"+ficheiro+"</a></td>"+
+            $("#files").append("<tr><td><a href='/uploaded/"+ficheiro+"'>"+ficheiro+"</a></td>"+
                                     "<td>" + descricao + "</td></tr>")
             ajaxPost()
         }
