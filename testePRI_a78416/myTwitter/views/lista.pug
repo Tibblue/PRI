@@ -1,0 +1,5 @@
+each p in lista
+    li
+        h3= p.autor+" :: "+p.hash
+        p= p.texto
+        button.w3-button.w3.w3-indigo(id="gosto") Gosto (#{p.gostos})
